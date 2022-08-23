@@ -1,0 +1,168 @@
+:root{
+    --colorPrimario: #FFC5C7;
+    --colorSecundario: #E60072;
+    --colorTerciario: #9E005D;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.fs-1{
+    font-size: 1.8em!important;
+}
+
+.fs-2{
+   font-size: 2.1em!important;
+}
+
+.fs-3{
+    font-size: 2.4em!important;
+}
+
+.fs-4{
+   font-size: 2.8em!important;
+}
+
+.fs-5{
+   font-size: 3.1em!important;
+}
+
+.fm-raleway{
+    font-family: 'Raleway', sans-serif;
+}
+
+.fm-pacifico{
+    font-family: 'Pacifico', cursive;
+}
+
+.color-black{
+    color: black!important;
+}
+
+.color-while{
+    color: white!important;
+}
+
+.color-primario{
+    color: var(--colorPrimario)!important;
+}
+
+.color-secundario{
+    color: var(--colorSecundario)!important;
+}
+
+.color-terciario{
+    color: var(--colorTerciario)!important;
+}
+
+.bg-primario{
+    background-color: var(--colorPrimario)!important;
+}
+
+.bg-secundario{
+    background-color: var(--colorSecundario)!important;
+}
+
+.bg-terciaario{
+    background-color: var(--colorTerciario)!important;
+}
+
+.bg-black{
+    background-color: black!important;
+}
+
+.bg-white{
+    background-color: white!important;
+}
+
+.bg-red{
+    background-color: red!important;
+}
+
+.text-slider{
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    display: flex;
+}
+
+
+/** NAVEGACION  **/
+.img-barra-principal{
+    height: 2em;
+}
+
+.put-top{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/** TARJETILLAS **/
+
+.img-tarjetilla{
+    border: 6px solid white;
+    -webkit-transition: transform .3s ease;
+    -ms-transition: transform .3s ease;
+    transition: transform .3s ease;
+}
+
+.img-tarjetilla:hover{
+    -webkit-transform: scale(1.2) rotate(10deg);
+    -ms-transform: scale(1.2) rotate(10deg);
+    transform: scale(1.2) rotate(10deg);
+    z-index: -10!important;
+}
+
+.imagen-tarejetilla p{
+    font-size: 2em;
+}
+
+.servicio-info{
+    background-color: white;
+    margin-top: -5rem;
+}
+
+.btn-personal{
+    margin: .2em;
+    color:#fff;
+    background-color: var(--colorSecundario);
+    border-color: var(--colorSecundario);
+}
+
+/* Servicios */
+.collapse-servicios button.btn-link{
+    text-decoration: none;
+    color: var(--colorSecundario);
+}
+
+.collapse-servicios button.btn-link:hover{
+    text-decoration: none;
+    color: var(--colorSecundario);
+}
+
+.aside-servicios{
+    background-color: var(--colorPrimario);
+}
+
+/** Footer **/
+
+.flooter-sitio{
+    background-color: var(--colorPrimario);
+}
+
+.footer-brand{
+    font-weight: bold!important;
+}
+
+.btn-primary-lili{
+    background-color: var(--colorPrimario)!important;
+}
+
+.btn-primary-lili:hover{
+    background-color: var(--colorSecundario)!important;
+    color: white;
+}
