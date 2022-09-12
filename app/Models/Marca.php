@@ -17,7 +17,7 @@ class Marca extends Model
      * @var string[]
      */
     protected $fillable = [
-        'nombre',
+        'name',
     ];
 
     /**

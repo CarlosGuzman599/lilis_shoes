@@ -17,7 +17,7 @@ class MarcaSeeder extends Seeder
     public function run()
     {
         Marca::create([
-            'nombre' => 'Adidas',
+            'name' => 'Adidas',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);

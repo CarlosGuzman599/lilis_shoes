@@ -18,13 +18,13 @@ return new class extends Migration
 
         Schema::create('proveedors', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
+            $table->string('name');
             $table->timestamps();
         });
 
         Schema::create('marcas', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
+            $table->string('name');
             $table->timestamps();
         });
 

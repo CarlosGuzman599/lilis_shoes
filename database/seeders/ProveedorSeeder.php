@@ -16,7 +16,7 @@ class ProveedorSeeder extends Seeder
     public function run()
     {
         Proveedor::create([
-            'nombre' => 'Price Shoes',
+            'name' => 'Price Shoes',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);

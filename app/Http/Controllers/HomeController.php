@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -27,5 +28,17 @@ class HomeController extends Controller
 
     public function nosotros(){
         return view('nosotros');
+    }
+
+    public function profile(){
+        //return view('admin.index');
+        if(Auth::user()->cargo->name == "admin"){
+            return view('profile.admin_view');
+        }else if(Auth::user()->cargo->name == "client"){
+            return view('profile.client_view');
+        }
+        //    $units = Unit::where('usuario','=',Auth::user()->id)->get();
+        //    return view('dashboard',compact('units'));
+        //}
     }
 }

@@ -80,6 +80,10 @@ body{
     background-color: red!important;
 }
 
+.bg-green{
+    background-color: #198754!important;
+}
+
 .text-slider{
     font-size: 4em;
     font-family: 'Raleway', sans-serif;
@@ -165,4 +169,8 @@ body{
 .btn-primary-lili:hover{
     background-color: var(--colorSecundario)!important;
     color: white;
+}
+
+.border-none{
+    border: none!important;
 }

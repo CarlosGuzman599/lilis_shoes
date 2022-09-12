@@ -13,8 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
+
+        Schema::create('cargos', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->timestamps();
+        });
+
         Schema::create('users', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('cargo_id')->constrained();
             $table->string('name');
             $table->string('email')->unique();
             $table->string('phone')->unique();

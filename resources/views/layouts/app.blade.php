@@ -97,13 +97,15 @@
                                     {{ Auth::user()->name }}
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-end text-center bg-red" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item color-primario" href="{{ route('logout') }}"
+                                <div class="dropdown-menu dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
+
+                                    <a class="btn btn-outline-primary d-block border-none mx-1" href="{{ route('profile') }}">Profile</a> 
+                                    <!--PARA CERRAR LA SESION-->
+                                    <a class="btn btn-outline-danger d-block border-none mx-1" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>

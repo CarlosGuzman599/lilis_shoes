@@ -32,6 +32,7 @@ class User extends Authenticatable
     protected $hidden = [
         'password',
         'remember_token',
+        'cargo_id'
     ];
 
     /**
@@ -42,4 +43,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function cargo(){
+        return $this->belongsTo(Cargo::class, 'cargo_id');
+    }
 }
