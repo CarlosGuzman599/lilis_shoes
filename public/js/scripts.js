@@ -1,6 +1,5 @@
 $(document).ready(function(){
     var barraAltura = $('.navegacion-tamplate').innerHeight();
-    console.log(barraAltura)
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
         if(scroll > barraAltura){

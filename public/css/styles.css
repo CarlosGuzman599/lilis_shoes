@@ -84,6 +84,10 @@ body{
     background-color: #198754!important;
 }
 
+.bg-grey{
+    background-color: grey!important;
+}
+
 .text-slider{
     font-size: 4em;
     font-family: 'Raleway', sans-serif;
@@ -154,8 +158,9 @@ body{
 
 /** Footer **/
 
-.flooter-sitio{
-    background-color: var(--colorPrimario);
+.foorter-text{
+    font-size: .8em;
+    color: rgba(0, 0, 0, 0.296);
 }
 
 .footer-brand{
@@ -173,4 +178,11 @@ body{
 
 .border-none{
     border: none!important;
+}
+
+
+/** LAYOUT'S STYLES **/
+
+.text-decription{
+    font-size: 0.8em!important;
 }

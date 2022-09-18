@@ -13,6 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
+        Schema::create('poblacions', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('cp');
+            $table->string('latitud');
+            $table->string('longitud');
+            $table->string('name_google');
+            $table->timestamps();
+        });
 
         Schema::create('cargos', function (Blueprint $table) {
             $table->id();
@@ -22,10 +31,15 @@ return new class extends Migration
 
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('cargo_id')->constrained();
+            $table->foreignId('cargo_id')->default(4)->constrained();
             $table->string('name');
             $table->string('email')->unique();
             $table->string('phone')->unique();
+            $table->foreignId('poblacion_id')->nullable()->constrained();
+            $table->integer('cp')->nullable();
+            $table->string('colonia')->nullable();
+            $table->string('calle')->nullable();
+            $table->string('numero')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();

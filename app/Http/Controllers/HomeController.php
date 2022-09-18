@@ -36,6 +36,8 @@ class HomeController extends Controller
             return view('profile.admin_view');
         }else if(Auth::user()->cargo->name == "client"){
             return view('profile.client_view');
+        }else if(Auth::user()->cargo->name == "user"){
+            return view('profile.user_view');
         }
         //    $units = Unit::where('usuario','=',Auth::user()->id)->get();
         //    return view('dashboard',compact('units'));

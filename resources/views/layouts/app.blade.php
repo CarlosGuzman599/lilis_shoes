@@ -123,7 +123,7 @@
         </main>
 
         <div class="row">
-            <p class="flooter-sitio m-0 p-2 text-center col">Todos los derechos reservados &copy <span class="footer-brand">Lili's Shoes</span> 2022</p>
+            <p class="flooter-sitio mb-0 py-2 text-center col foorter-text">Todos los derechos reservados &copy <span class="footer-brand">Lili's Shoes</span> 2022</p>
         </div>
     </div>
 </body>
