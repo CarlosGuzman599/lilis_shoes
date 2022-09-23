@@ -21,3 +21,4 @@ Route::get('/nosotros', [App\Http\Controllers\HomeController::class, 'nosotros']
 Route::get('/articulos', [App\Http\Controllers\ArticuloController::class, 'index'])->name('index_articulos');
 
 Route::get('/profile', [App\Http\Controllers\HomeController::class, 'profile'])->name('profile')->middleware('auth');
+

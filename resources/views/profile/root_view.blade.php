@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h1 class="text-center fm-raleway">Administrador</h1>
+        <h1 class="text-center fm-raleway">*Administrador*</h1>
 
         <div class="actions-container row container justify-content-center">
 

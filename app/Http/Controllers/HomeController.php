@@ -32,7 +32,9 @@ class HomeController extends Controller
 
     public function profile(){
         //return view('admin.index');
-        if(Auth::user()->cargo->name == "admin"){
+        if(Auth::user()->cargo->name == "root"){
+            return view('profile.root_view');
+        }else if(Auth::user()->cargo->name == "admin"){
             return view('profile.admin_view');
         }else if(Auth::user()->cargo->name == "client"){
             return view('profile.client_view');

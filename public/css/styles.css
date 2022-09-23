@@ -44,6 +44,10 @@ body{
     color: white!important;
 }
 
+.color-grey{
+    color: gray!important;
+}
+
 .color-primario{
     color: var(--colorPrimario)!important;
 }
@@ -182,7 +186,22 @@ body{
 
 
 /** LAYOUT'S STYLES **/
+.search-place{
+    border-width: 0px 0px 1px 0px!important;
+    background-color: transparent!important;
+    width: 90%!important;
+}
+
+.actions-container{
+    margin-left: .1em!important;
+}
 
 .text-decription{
     font-size: 0.8em!important;
+}
+
+.img-main-button{
+    display: block!important;
+    max-width: 90%!important;
+    margin: 0 auto!important;
 }
